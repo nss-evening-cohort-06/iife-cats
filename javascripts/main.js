@@ -5,4 +5,9 @@ document.getElementById("fancyPetStore").addEventListener("click", (event) =>{
 		let catIndex = event.target.id.split("-")[1];
 		CatStore.adoptCat(catIndex)
 	}
-})
+});
+
+
+document.getElementById("callan").addEventListener("click", (event) =>{
+	CatStore.getCatsByOwner(2);
+});
